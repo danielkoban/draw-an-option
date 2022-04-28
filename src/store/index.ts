@@ -12,7 +12,6 @@ const addItem = () => {
 
 const removeItem = (index: number) => {
   items.value.splice(index, 1); 
-  // delete items.value[index];
 }
 
 export default {
