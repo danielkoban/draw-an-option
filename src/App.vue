@@ -1,12 +1,19 @@
 <template>
-  <h1>Hello World!</h1>
+  <AddItem />
+  <ItemList />
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import AddItem from "./components/AddItem.vue";
+import ItemList from "./components/ItemList.vue";
 
 export default defineComponent({
   name: "App",
+  components: {
+    AddItem,
+    ItemList,
+  },
 });
 </script>
 
