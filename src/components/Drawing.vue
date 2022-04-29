@@ -1,6 +1,6 @@
 <template>
   <h2>{{ drawnItem }}</h2>
-  <button @click="drawItem" :disabled="!disabled">draw</button>
+  <button @click="drawItem" :disabled="!disabled">Wylosuj</button>
 </template>
 
 <script>

@@ -3,7 +3,7 @@
   <ul v-else>
     <li v-for="(item, index) in items" :key="index">
       {{ item }}
-      <button @click="removeItem(index)">-</button>
+      <span class="delete-btn" @click="removeItem(index)">&#10005;</span>
     </li>
   </ul>
 </template>
