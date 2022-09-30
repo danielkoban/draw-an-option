@@ -1,7 +1,7 @@
 <template>
   <div>
     <input type="text" v-model="newItem" @keyup.enter="addItem" />
-    <button @click="addItem">Dodaj</button>
+    <button @click="addItem" :disabled="!newItem">Dodaj</button>
   </div>
 </template>
 
@@ -26,7 +26,7 @@ input {
   height: 40px;
   margin: 10px;
   padding: 12px;
-  border: 1px solid #d7c0d0;
+  border: 1px solid var(--color-pink);
   border-radius: 25px;
   outline: none;
 }
